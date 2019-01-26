@@ -1,7 +1,9 @@
 devDependencies:
+  '@fortawesome/fontawesome-free': 5.6.3
   axios: 0.18.0
   bootstrap: 4.2.1
   cross-env: 5.2.0
+  datatables.net-bs4: 1.10.19
   jquery: 3.3.1
   laravel-mix: 4.0.14
   lodash: 4.17.11
@@ -783,6 +785,13 @@ packages:
     resolution:
       integrity: sha1-YdwLM2qTutwCv19pxM2OE1Py/8A=
       tarball: 'http://registry.npm.taobao.org/@babel/types/download/@babel/types-7.3.0.tgz'
+  /@fortawesome/fontawesome-free/5.6.3:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha1-YcEixCDXqRYT85PWoG5aTGrmq/M=
+      tarball: 'http://registry.npm.taobao.org/@fortawesome/fontawesome-free/download/@fortawesome/fontawesome-free-5.6.3.tgz'
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
       call-me-maybe: 1.0.1
@@ -2312,6 +2321,21 @@ packages:
     resolution:
       integrity: sha1-GzN5LhHpFKL9bW7WRHRkRE5fpkA=
       tarball: 'http://registry.npm.taobao.org/cyclist/download/cyclist-0.2.2.tgz'
+  /datatables.net-bs4/1.10.19:
+    dependencies:
+      datatables.net: 1.10.19
+      jquery: 3.3.1
+    dev: true
+    resolution:
+      integrity: sha1-Bgjf8iAIzzx7imixvHAu0lW0BPs=
+      tarball: 'http://registry.npm.taobao.org/datatables.net-bs4/download/datatables.net-bs4-1.10.19.tgz'
+  /datatables.net/1.10.19:
+    dependencies:
+      jquery: 3.3.1
+    dev: true
+    resolution:
+      integrity: sha1-l6HtQcheYtYQQGA0gbWXkKFy3R8=
+      tarball: 'http://registry.npm.taobao.org/datatables.net/download/datatables.net-1.10.19.tgz'
   /date-now/0.1.4:
     dev: true
     resolution:
@@ -7589,9 +7613,11 @@ registry: 'https://registry.npm.taobao.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@fortawesome/fontawesome-free': ^5.6.3
   axios: ^0.18
   bootstrap: ^4.0.0
   cross-env: ^5.1
+  datatables.net-bs4: ^1.10.19
   jquery: ^3.2
   laravel-mix: ^4.0.7
   lodash: ^4.17.5
