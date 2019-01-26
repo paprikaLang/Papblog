@@ -8,10 +8,15 @@
  * 使用 storage 配置使用的文件系统，使用 webpath 配置 Web 访问根目录
  */
 return [
-    'title' => 'My Blog',
-    'posts_per_page' => 5,
+    'name' => "papblog",
+    'title' => "papblog",
+    'subtitle' => 'https://github.com/paprikaLang',
+    'description' => 'laravel blog system',
+    'author' => 'paprikaLang',
+    'page_image' => 'home-bg.jpg',
+    'posts_per_page' => 10,
     'uploads' => [
         'storage' => 'public',
-        'webpath' => '/storage',
+        'webpath' => '/storage/uploads',
     ],
 ];
