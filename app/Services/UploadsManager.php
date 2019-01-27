@@ -109,7 +109,7 @@ class UploadsManager
      */
     public function fileWebpath($path)
     {
-        $path = rtrim(config('blog.uploads.webpath'), '/') . '/' . ltrim($path, '/');
+        $path = rtrim('/storage', '/') . '/' . ltrim($path, '/');
         return url($path);
     }
 

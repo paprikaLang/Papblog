@@ -10,11 +10,11 @@
 return [
     'name' => "papblog",
     'title' => "papblog",
-    'subtitle' => 'https://github.com/paprikaLang',
+    'subtitle' => 'http://papblog.paprikaLang.tk',
     'description' => 'laravel blog system',
     'author' => 'paprikaLang',
-    'page_image' => 'home-bg.jpg',
-    'posts_per_page' => 10,
+    'page_image' => 'about-bg.jpg',
+    'posts_per_page' => 5,
     'uploads' => [
         'storage' => 'public',
         'webpath' => '/storage/uploads',
