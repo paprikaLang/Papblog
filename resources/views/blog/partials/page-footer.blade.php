@@ -29,8 +29,10 @@
                         </a>
                     </li>
                 </ul>
+                <br>
                 <p class="copyright text-muted">Copyright © {{ config('blog.author') }} 2018</p>
             </div>
         </div>
     </div>
+
 </footer>

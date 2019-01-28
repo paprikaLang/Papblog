@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\Tag;
 use App\Services\PostService;
 use Carbon\Carbon;
+use App\Services\SiteMap;
 
 class BlogController extends Controller
 {
@@ -23,7 +24,6 @@ class BlogController extends Controller
 //
 //        return view('blog.index', compact('posts'));
     }
-
     public function showPost($slug, Request $request)
     {
         $post = Post::with('tags')->where('slug', $slug)->firstOrFail();
@@ -34,5 +34,13 @@ class BlogController extends Controller
         return view($post->layout, compact('post', 'tag'));
 //        $post = Post::where('slug', $slug)->firstOrFail();
 //        return view('blog.post', ['post' => $post]);
+    }
+
+    public function siteMap(SiteMap $siteMap)
+    {
+        $map = $siteMap->getSiteMap();
+
+        return response($map)
+            ->header('Content-type', 'text/xml');
     }
 }

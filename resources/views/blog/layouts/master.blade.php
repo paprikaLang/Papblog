@@ -9,7 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ $title ?? config('blog.title') }}</title>
-
     {{-- Styles --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
