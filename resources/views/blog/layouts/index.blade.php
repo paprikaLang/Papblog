@@ -1,14 +1,55 @@
 @extends('blog.layouts.master')
 
 @section('page-header')
+    <div id="loader"></div>
     <header class="masthead" style="background-image: url('{{ page_image($page_image) }}')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h1>{{ $title }}</h1>
-                        <span class="subheading">{{ $subtitle }}</span>
+                        <div id="content">
+                            <div class="title" style="font-size: 56px; letter-spacing: 12px;">{{ $title }}</div>
+                        </div>
+                        {{--</div>--}}
+                        <script type="text/javascript">
+
+                            const text = baffle(".title");
+                            text.set({
+                                characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+                                speed: 120
+                            });
+                            text.start();
+                            text.reveal(4000);
+
+                        </script>
+                        <script type="text/javascript">
+
+                            var loader;
+                            function loadNow(opacity) {
+                                if(opacity <= 0) {
+                                    displayContent();
+                                }
+                                else {
+                                    loader.style.opacity = opacity;
+                                    window.setTimeout(function() {
+                                        loadNow(opacity - 0.05)
+                                    }, 100);
+                                }
+                            }
+
+                            function displayContent() {
+                                loader.style.display = 'none';
+                                document.getElementById('content').style.display = 'block';
+                            }
+
+                            document.addEventListener("DOMContentLoaded", function() {
+                                loader = document.getElementById('loader');
+                                loadNow(1);
+                            });
+
+                        </script>
+                        {{--<span class="subheading">{{ $subtitle }}</span>--}}
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
     <meta name="description" content="{{ $meta_description }}">
     <meta name="author" content="{{ config('blog.author') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <title>{{ $title ?? config('blog.title') }}</title>
     {{-- Styles --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

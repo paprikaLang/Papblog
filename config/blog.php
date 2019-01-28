@@ -9,7 +9,7 @@
  */
 return [
     'name' => "PAPBLOG",
-    'title' => "PAPBLOG",
+    'title' => "PAPRIKA LANG",
     'subtitle' => 'http://papblog.paprikaLang.tk',
     'description' => 'laravel blog system',
     'author' => 'paprikaLang',
