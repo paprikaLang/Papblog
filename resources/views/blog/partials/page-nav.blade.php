@@ -10,9 +10,14 @@
 
         {{-- Collect the nav links, forms, and other content for toggling --}}
         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+            </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">首页</a>
+                    <a class="nav-link" href="/contact">Contact Me</a>
                 </li>
             </ul>
         </div>

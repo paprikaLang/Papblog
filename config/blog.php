@@ -8,8 +8,8 @@
  * 使用 storage 配置使用的文件系统，使用 webpath 配置 Web 访问根目录
  */
 return [
-    'name' => "papblog",
-    'title' => "papblog",
+    'name' => "PAPBLOG",
+    'title' => "PAPBLOG",
     'subtitle' => 'http://papblog.paprikaLang.tk',
     'description' => 'laravel blog system',
     'author' => 'paprikaLang',
